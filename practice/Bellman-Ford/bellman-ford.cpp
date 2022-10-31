@@ -48,9 +48,9 @@ int main()
 		for (int i = 1; i <= n; i++) {
 			for (int j = 1; j <= n; j++) {
 				if (i != k && j != k && i != j) {
-          // for each value k, from 1 to n, we fix the k-row, k-line and the main diagonal
-          // then we update the other values in the matrix by checking if the distance from
-          // node i to node j is bigger than the distance from i to k + from k to j
+         		 		// for each value k, from 1 to n, we fix the k-row, k-line and the main diagonal
+          				// then we update the other values in the matrix by checking if the distance from
+          				// node i to node j is bigger than the distance from i to k + from k to j
 					ll dij = distMatrix[i][j];
 					ll dik = distMatrix[i][k];
 					ll dkj = distMatrix[k][j];
