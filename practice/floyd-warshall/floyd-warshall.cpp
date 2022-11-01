@@ -31,10 +31,10 @@ int main()
 	// m = roads;
 	// q = queries;
 	
-	int** distMatrix = (int**)malloc((n+1) * sizeof(int*));
+	ll** distMatrix = (ll**)malloc((n+1) * sizeof(ll*));
 	
 	for (int i = 1; i <= n; i++) {
-		distMatrix[i] = (int*)malloc((n+1) * sizeof(int));
+		distMatrix[i] = (ll*)malloc((n+1) * sizeof(ll));
 		for (int j = 1; j <= n; j++) {
 			distMatrix[i][j] = INF;
 		}
